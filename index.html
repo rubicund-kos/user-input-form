@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма автозаполнения</title>
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+	<p>
+		<label for="">Имя</label>
+		<input type="text" name="firstName" data-chars-allowed="абвгдеёжзийклмнопрстуфхцчшщъыьэюя" data-message-id="firstNameError" />
+		<span id="firstNameError">Допускаются только буквы русского алфавита</span>
+	</p>
+
+	<p>
+		<label for="">Номер телефона</label>
+		<input type="text" name="telephone" data-chars-allowed="0123456789+" data-message-id="telephoneError" />
+		<span id="telephoneError">Допускаются только цифры и знак "+"</span>
+	</p>
+
+
+	<script src="js/main.js"></script>
+</body>
+</html>
